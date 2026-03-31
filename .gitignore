@@ -12,6 +12,3 @@ yarn-error.log*
 # OS junk
 .DS_Store
 Thumbs.db
-
-# Optional: build artifacts (if you regenerate CSS)
-output.css
