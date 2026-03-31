@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Test Extension</title>
+  <link rel="stylesheet" href="output.css" />
+</head>
+<body class="m-0 min-h-[440px] w-[360px] bg-[#dbe6f7] font-sans text-[#1d2a3f]">
+  <main class="min-h-[440px] border border-[#b3c5e0] bg-[#d4e0f3] p-3.5">
+    <form id="search-form" class="grid grid-cols-[minmax(0,1fr)_auto] items-stretch gap-2">
+      <div class="min-h-10 rounded-xl border border-[#a9bfdc] bg-[#f8fbff] px-3 transition-[border-color,box-shadow] focus-within:border-[rgba(92,134,182,0.5)] focus-within:shadow-[0_0_0_3px_rgba(92,134,182,0.12)]">
+        <input
+          type="text"
+          id="search-input"
+          class="h-10 w-full bg-transparent text-sm text-[#1d2a3f] outline-none placeholder:text-[#7d8da4]"
+          placeholder="Search novel title..."
+          autocomplete="off"
+          spellcheck="false"
+        />
+      </div>
+      <button
+        id="search-btn"
+        type="submit"
+        class="min-h-10 min-w-20 rounded-xl bg-[#5f86b6] px-3 text-sm font-semibold text-white outline-none transition-[background,opacity,box-shadow] hover:bg-[#45688f] focus-visible:shadow-[0_0_0_3px_rgba(92,134,182,0.18)] disabled:cursor-wait disabled:opacity-75"
+      >
+        Search
+      </button>
+    </form>
+
+    <div class="mt-2.5 flex items-center justify-between gap-2">
+      <div id="results-meta" class="px-0.5 text-xs text-[#4f6280]" hidden></div>
+      <button
+        id="full-list-btn"
+        type="button"
+        class="hidden rounded-lg border border-[#9eb6d6] bg-[#eef4fb] px-2.5 py-1 text-xs font-medium text-[#45688f] outline-none transition-colors hover:bg-[#e2ecf8] focus-visible:shadow-[0_0_0_3px_rgba(92,134,182,0.18)]"
+      >
+        See full list
+      </button>
+    </div>
+    <section aria-live="polite">
+      <div id="results" class="results-scroll mt-2.5 flex max-h-93 flex-col gap-2.5 overflow-y-auto pr-0.5"></div>
+    </section>
+  </main>
+
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "name": "test-extension",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "npx @tailwindcss/cli -i ./input.css -o ./output.css --watch",
+    "build": "npx @tailwindcss/cli -i ./input.css -o ./output.css",
+    "package": "mkdir -p dist && zip -r dist/extension.zip . -x \"node_modules/*\" \".git/*\" \"dist/*\" \"*.DS_Store\""
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.2.2",
+    "tailwindcss": "^4.2.2"
+  },
+  "dependencies": {
+    "lucide-react": "^1.7.0"
+  }
+}

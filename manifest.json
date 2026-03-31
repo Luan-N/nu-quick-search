@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "N.U. Quick Search",
+  "version": "1.1.0",
+  "description": "Novel Updates Quick Search allows users to quickly search for novels on novelupdates.com directly from the context menu.",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "N.U. Quick Search",
+    "default_icon": {
+      "1024": "icons/icon1024.png"
+    }
+  },
+  "permissions": [
+    "contextMenus",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://novelshaven.com/*"
+  ],
+  "icons": {
+    "1024": "icons/icon1024.png"
+  }
+}
