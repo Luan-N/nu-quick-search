@@ -1,7 +1,7 @@
 # NU Quick Search (Chrome Extension)
 
 Novel Updates Quick Search allows users to quickly search for novels on NovelUpdates directly from anywhere on the web.
-
+Chrome Extension Link: https://chromewebstore.google.com/detail/nu-quick-search/igohbhnbokdlodifpclcklkdglabjkoa?hl=en
 ## Overview
 
 **Search NovelUpdates instantly — without breaking your flow.**
